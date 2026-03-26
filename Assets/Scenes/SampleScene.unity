@@ -215,6 +215,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc197a99e8ef1cc4686a7afb71baf007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gravitation
+  isSun: 0
+  orbitSpeed: 15
 --- !u!54 &177415048
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -259,6 +261,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc197a99e8ef1cc4686a7afb71baf007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gravitation
+  isSun: 0
+  orbitSpeed: 14
 --- !u!54 &256069403
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -567,6 +571,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc197a99e8ef1cc4686a7afb71baf007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gravitation
+  isSun: 0
+  orbitSpeed: 12
 --- !u!54 &431112223
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -848,6 +854,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc197a99e8ef1cc4686a7afb71baf007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gravitation
+  isSun: 0
+  orbitSpeed: 10
 --- !u!54 &804856862
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1020,6 +1028,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc197a99e8ef1cc4686a7afb71baf007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gravitation
+  isSun: 0
+  orbitSpeed: 20
 --- !u!54 &840692499
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1028,7 +1038,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840692494}
   serializedVersion: 5
-  m_Mass: 4
+  m_Mass: 3.8
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1064,6 +1074,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc197a99e8ef1cc4686a7afb71baf007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gravitation
+  isSun: 0
+  orbitSpeed: 9
 --- !u!54 &1184245755
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1072,7 +1084,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184245750}
   serializedVersion: 5
-  m_Mass: 95
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1345,6 +1357,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc197a99e8ef1cc4686a7afb71baf007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gravitation
+  isSun: 0
+  orbitSpeed: 7
 --- !u!54 &1724490698
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1389,6 +1403,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc197a99e8ef1cc4686a7afb71baf007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gravitation
+  isSun: 1
+  orbitSpeed: 0
 --- !u!54 &1878070166
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1433,6 +1449,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc197a99e8ef1cc4686a7afb71baf007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gravitation
+  isSun: 0
+  orbitSpeed: 8
 --- !u!54 &1997884920
 Rigidbody:
   m_ObjectHideFlags: 0

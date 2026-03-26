@@ -5,7 +5,11 @@ public class Gravitation : MonoBehaviour
 {
     public static List<Gravitation> otherObj;
     private Rigidbody _rb;
-    const float G = 6.67f;
+    private Transform sun;
+    const float G = 0.667f;
+
+    [SerializeField] bool isSun = false;
+    [SerializeField] float orbitSpeed = 10f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -15,9 +19,35 @@ public class Gravitation : MonoBehaviour
             otherObj = new List<Gravitation>(); 
         }
         otherObj.Add(this);
+
+        GameObject sunObj = GameObject.Find("Sun");
+        if (sunObj != null)
+        {
+            sun = sunObj.transform;
+        }
+
+        _rb.linearDamping = 0f;
+        _rb.angularDamping = 0f;
     }
 
     // Update is called once per frame
+    void Start()
+    {
+        if (!isSun && sun != null)
+        {
+            Vector3 toSun = (sun.position - transform.position).normalized;
+            Vector3 orbitDir = Vector3.Cross(toSun, Vector3.up).normalized;
+
+            _rb.linearVelocity = orbitDir * orbitSpeed;
+        }
+    }
+    void Update()
+    {
+        if (!isSun && sun != null)
+        {
+            transform.LookAt(sun);
+        }
+    }
     void FixedUpdate()
     {
         foreach (Gravitation obj in otherObj)
@@ -27,6 +57,7 @@ public class Gravitation : MonoBehaviour
                 Attract(obj);
             }
         }
+
     }
 
     void Attract(Gravitation other)
